@@ -1,6 +1,5 @@
 @import url("http://fonts.cdnfonts.com/css/balqis");
 @import url("http://fonts.cdnfonts.com/css/balqis");
-@import url("http://fonts.cdnfonts.com/css/balqis");
 * {
   margin: 0%;
   padding: 0%;
@@ -22,6 +21,7 @@
 
 header {
   background-image: url("../assets/img/Rectangle 43 (1).png");
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -647,5 +647,163 @@ footer .dreams {
   border-radius: 50%;
   color: white;
   background-color: #E2AB3F;
+}
+
+.hotel-sec {
+  margin-top: 211px;
+}
+
+.hotel-sec h1 {
+  font-family: 'Balqis';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 69px;
+  color: #E2AB3F;
+}
+
+.hotel-sec h4 {
+  font-family: 'Roboto Condensed';
+  font-style: italic;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  padding-bottom: 100px;
+  padding-left: 107px;
+  color: #000000;
+}
+
+.hotel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hotel-text {
+  padding-left: 100px;
+}
+
+.hotel-text p:first-child {
+  padding-top: 0px;
+}
+
+.hotel-text p {
+  padding-top: 20px;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.hotel-pics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hotel-pics .hotel-pics-1:first-child {
+  padding-right: 39px;
+}
+
+.hotel-pics .pics {
+  padding-top: 40px;
+}
+
+.price-sec {
+  margin-top: 211px;
+}
+
+.price-sec h1 {
+  font-family: 'Balqis';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 69px;
+  color: #E2AB3F;
+}
+
+.price-sec h4 {
+  font-family: 'Roboto Condensed';
+  font-style: italic;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  padding-bottom: 100px;
+  padding-left: 107px;
+  color: #000000;
+}
+
+.price-sec .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.price-sec .price .price-text-1 h3 {
+  padding-bottom: 50px;
+  font-family: 'Roboto Condensed';
+}
+
+.price-sec .price .price-text-1 p {
+  width: 530px;
+  padding-bottom: 20px;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.price-sec .price .price-text-2 {
+  padding-left: 70px;
+}
+
+.price-sec .price .price-text-2 h3 {
+  font-family: 'Roboto Condensed';
+  padding-bottom: 50px;
+}
+
+.price-sec .price .price-text-2 p {
+  width: 364px;
+  padding-bottom: 20px;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.price-sec .parachute-1 {
+  margin-top: -100px;
+  padding-left: 42px;
+  display: inline-block;
+}
+
+.price-sec .parachute-1 img {
+  width: 206px;
+  height: 305px;
+}
+
+.price-sec .parachute-2 {
+  margin-top: -100px;
+  padding-bottom: 60px;
+}
+
+.price-sec .parachute-2 img {
+  width: 73px;
+  height: 108px;
+}
+
+.price-sec .parachute-3 {
+  padding-left: 86px;
+}
+
+.price-sec .parachute-3 img {
+  width: 73px;
+  height: 108px;
 }
 /*# sourceMappingURL=style.css.map */
