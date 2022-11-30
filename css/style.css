@@ -154,7 +154,7 @@ header h4 {
   }
 }
 
-@media only screen and (max-width: 768px) and (min-width: 576px) {
+@media only screen and (min-width: 576px) {
   header {
     background-size: 100%;
   }
@@ -709,6 +709,90 @@ footer .dreams {
 
 .hotel-pics .pics {
   padding-top: 40px;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+  .hotel-sec h1, .hotel-sec h4 {
+    text-align: center;
+    padding-left: 0;
+  }
+  .hotel-sec .hotel {
+    display: -ms-grid;
+    display: grid;
+  }
+  .hotel-sec .hotel-img {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .hotel-sec .hotel-text {
+    display: inline;
+    width: 760px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-left: 209px;
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  .hotel-sec h1, .hotel-sec h4 {
+    text-align: center;
+    padding-left: 0;
+  }
+  .hotel-sec .hotel {
+    display: -ms-grid;
+    display: grid;
+  }
+  .hotel-sec .hotel-img {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .hotel-sec .hotel-text {
+    display: inline;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .hotel-pics {
+    display: -ms-grid;
+    display: grid;
+  }
+  .hotel-pics .hotel-pics-1:first-child {
+    padding-right: 39px;
+  }
+  .hotel-pics .pics {
+    padding-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .hotel-sec h1, .hotel-sec h4 {
+    text-align: center;
+    padding-left: 0;
+  }
+  .hotel-sec .hotel {
+    display: -ms-grid;
+    display: grid;
+  }
+  .hotel-sec .hotel-img {
+    display: block;
+    width: 300px;
+  }
+  .hotel-sec .hotel-text {
+    display: inline;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .hotel-pics {
+    display: -ms-grid;
+    display: grid;
+  }
+  .hotel-pics .hotel-pics-1:first-child {
+    padding-right: 39px;
+  }
+  .hotel-pics .pics {
+    padding-top: 40px;
+  }
 }
 
 .price-sec {

@@ -202,7 +202,7 @@ font-size: 36px;
 }
 
 
-@media only screen and (max-width: 768px) and (min-width: 576px)  
+@media only screen and (min-width: 576px)  
 {
 
     
@@ -896,6 +896,118 @@ color: #E2AB3F;
 }
 
 
+
+@media only screen and (max-width: 1200px) and (min-width: 992px)  
+{
+    .hotel-sec{
+        h1,h4{
+            text-align: center;
+            padding-left: 0;
+        }
+        .hotel{
+            display: grid;
+        }
+    .hotel-img{
+        display: block;
+        width: 300px;
+        margin: 0 auto;
+    }
+    
+    .hotel-text{
+        display: inline;
+        width: 760px;
+        margin: 0 auto;
+padding-top: 30px;
+        padding-left: 209px;
+
+    }
+    }
+    
+
+}
+
+
+
+@media only screen and (max-width: 992px) and (min-width: 768px)  
+{
+    .hotel-sec{
+        h1,h4{
+            text-align: center;
+            padding-left: 0;
+        }
+        .hotel{
+            display: grid;
+        }
+    .hotel-img{
+        display: block;
+        width: 300px;
+        margin: 0 auto;
+    
+    }
+    
+    .hotel-text{
+        display: inline;
+        width: 300px;
+        margin: 0 auto;
+    }
+    }
+
+    .hotel-pics{
+        display: grid;
+    
+        .hotel-pics-1:first-child{
+            padding-right: 39px;
+        }
+    
+        .pics{
+            padding-top: 40px;
+            
+        }
+    }
+}
+
+
+@media only screen and (max-width: 576px)  
+{
+    .hotel-sec{
+        h1,h4{
+            text-align: center;
+            padding-left: 0;
+        }
+        .hotel{
+            display: grid;
+        }
+    .hotel-img{
+        display: block;
+        width: 300px;
+    
+    }
+    
+    .hotel-text{
+        display: inline;
+        width: 300px;
+        margin: 0 auto;
+    }
+    }
+
+    .hotel-pics{
+        display: grid;
+    
+        .hotel-pics-1:first-child{
+            padding-right: 39px;
+        }
+    
+        .pics{
+            padding-top: 40px;
+            
+        }
+    }
+}
+    
+
+
+
+
 .price-sec{
     margin-top: 211px;
 
@@ -1004,3 +1116,7 @@ color: #000000;
          }
     }
 }
+
+
+
+
