@@ -18,30 +18,25 @@ const hotelimages=[
 ]
 
 
+const ContainerOfImages = document.querySelector(".hotel-pics .hotel-pics-1")
+
+for (const image of hotelimages) {
+    renderImagesCard(image)
+}
 
 
+function renderImagesCard(image) {
+    const picsdiv = document.createElement('div')
+    picsdiv.classList.add('pics')
+    ContainerOfImages.appendChild(picsdiv)
+    picsdiv.outerHTML = getImageCardMarkup(image)
+  }
 
-
-
-// const HotelPics = document.querySelector(".hotel-pics-1")
-
-
-// for (const images of hotelimages) {
-//     renderImagesCard(images)
-// }
-
-// function renderImagesCard(images) {
-//   const newElement = document.createElement("div")
-//   HotelPics.prepend(newElement)
-//   newElement.outerHTML = getImagesMarkup(images)
-// }
-
-// function getImagesMarkup(images) 
-// {
-//   return
-//       <div class="pics">
-//         <img src="${images.imageSrc}" alt="">
-//       </div>
-  
-
-// }
+  function getImageCardMarkup(image) {
+    return `
+      <div class="pics">
+           <img src="${image.imageScr}" alt="">
+           
+      </div>
+    `
+  }
