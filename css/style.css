@@ -697,14 +697,11 @@ footer .dreams {
   color: #000000;
 }
 
-.hotel-pics {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.hotel-pics .hotel-pics-1:first-child {
-  padding-right: 39px;
+.hotel-pics .hotel-pics-1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
 }
 
 .hotel-pics .pics {
@@ -753,15 +750,11 @@ footer .dreams {
     width: 300px;
     margin: 0 auto;
   }
-  .hotel-pics {
+  .hotel-pics .hotel-pics-1 {
     display: -ms-grid;
     display: grid;
-  }
-  .hotel-pics .hotel-pics-1:first-child {
-    padding-right: 39px;
-  }
-  .hotel-pics .pics {
-    padding-top: 40px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 
@@ -783,15 +776,11 @@ footer .dreams {
     width: 300px;
     margin: 0 auto;
   }
-  .hotel-pics {
+  .hotel-pics .hotel-pics-1 {
     display: -ms-grid;
     display: grid;
-  }
-  .hotel-pics .hotel-pics-1:first-child {
-    padding-right: 39px;
-  }
-  .hotel-pics .pics {
-    padding-top: 40px;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 

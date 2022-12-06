@@ -883,16 +883,21 @@ color: #E2AB3F;
 }
 
 .hotel-pics{
-    display: flex;
+    
 
-    .hotel-pics-1:first-child{
-        padding-right: 39px;
+    .hotel-pics-1{
+
+        display: grid;
+        grid-template-columns: 50% 50%;
+        
     }
 
     .pics{
         padding-top: 40px;
         
     }
+
+   
 }
 
 
@@ -953,14 +958,15 @@ padding-top: 30px;
     }
 
     .hotel-pics{
-        display: grid;
+        
     
-        .hotel-pics-1:first-child{
-            padding-right: 39px;
+        .hotel-pics-1{
+            display: grid;
+            grid-template-columns: 1fr;
+            
         }
     
         .pics{
-            padding-top: 40px;
             
         }
     }
@@ -991,16 +997,14 @@ padding-top: 30px;
     }
 
     .hotel-pics{
-        display: grid;
+        
     
-        .hotel-pics-1:first-child{
-            padding-right: 39px;
+        .hotel-pics-1{
+            display: grid;
+            grid-template-columns: 1fr;
         }
     
-        .pics{
-            padding-top: 40px;
-            
-        }
+       
     }
 }
     

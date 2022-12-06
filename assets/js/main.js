@@ -18,11 +18,14 @@ const hotelimages=[
 ]
 
 
+
 const ContainerOfImages = document.querySelector(".hotel-pics .hotel-pics-1")
 
 for (const image of hotelimages) {
     renderImagesCard(image)
 }
+
+
 
 
 function renderImagesCard(image) {
@@ -35,7 +38,8 @@ function renderImagesCard(image) {
   function getImageCardMarkup(image) {
     return `
       <div class="pics">
-           <img src="${image.imageScr}" alt="">
+      
+           <img src="${image.imageSrc}" alt="">
            
       </div>
     `
