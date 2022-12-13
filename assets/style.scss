@@ -351,56 +351,69 @@ color: #000000;
     }
 }
 
-
-
-.slider {
-    width: 850px;
-    height: 600px;
-    position: relative;
+.slider{
+    width: 80vw;
+  height: 600px;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  &:hover .controls {
+    opacity: 1;
   }
-  
-  .slide {
-    width: 850px;
-    height: 600px;
+}
+
+  .controls {
+    opacity: 0;
+    display: flex;
     position: absolute;
-    transition: all 0.5s;
-  }
-  
-  .slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .btn {
-
-    &:hover{
-        color: red;
-    }
-    position: absolute;
-    border: none;
-    z-index: 10px;
-    cursor: pointer;
-    color: white;
-    font-size: 50px;
     top: 50%;
-  }
-  
-  .btn:active {
-    transform: scale(1.1);
-  }
-  
-  .btn-prev {
-    top: 45%;
-    left: 2%;
-  }
-  
-  .btn-next {
-    top: 45%;
-    right: 2%;
+    left: 0;
+    justify-content: space-between !important;
+    width: 100%;
+    z-index: 99999;
+    transition: all ease 0.5s;
+    
+    .prev-slide{
+        left: 0% !important;
+    } 
+    .next-slide{
+        right: 0% !important;
+    }
+    .control {
+      margin: 0 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.7);
+      opacity: .5;
+      transition: ease .3s;
+      cursor: pointer;
+      
+      &:hover {
+        opacity: 1;
+      }
+    }
   }
 
-
+  .slides {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      display: flex;
+      width: 100%;
+      transition: 1s ease-in-out all;
+      
+      .slide {
+        min-width: 100%;
+        min-height: 600px;
+        height: auto;
+      }
+    }
 
 
 .fairytale-slider{
@@ -419,62 +432,7 @@ color: #000000;
 }
 
 
-@media only screen and (max-width: 1200px) and (min-width: 992px)  
-{
-    .slider {
-        width: 650px;
-        height: 400px;
-      }
-      
-      .slide {
-        width: 650px;
-        height: 400px;
-      }
 
-
-    
-        .fairytale-text{
-            margin-left: 30px;
-            width: 300px;
-    
-            p{
-                font-size: 15px;
-                margin-top: 0%;
-            }
-        }
-}
-
-
-@media only screen and (max-width: 992px) 
-{
-
-    .slider {
-        display: inline;
-        width: 850px;
-        height: 600px;
-      }
-      
-      .slide {
-        width: 850px;
-        height: 600px;
-      }
-
-
-      .fairytale-slider{
-        display:grid;
-           
-        .fairytale-text{
-            display: inline;
-            margin-left: 70px;
-            width: 700px;
-    
-            p{
-                margin-top: 50px;
-            }
-        }
-    }
-    
-}
 
 
 .ourtrip{
